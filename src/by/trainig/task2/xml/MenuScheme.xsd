@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MenuSchema"
 	xmlns:tns="http://www.example.org/MenuSchema" 
-	xmlns:cd="http://www.training.by/ColdSnacks"
+	xmlns:cs="http://www.training.by/ColdSnacks"
+	xmlns:hs="http://www.training.by/HotSnacks"
+	xmlns:b="http://www.training.by/breakfast"
 	elementFormDefault="qualified">
 	<import schemaLocation="ColdSnacksScheme.xsd" namespace="http://www.training.by/ColdSnacks"/>
+	<import schemaLocation="HotSnacksScheme.xsd" namespace="http://www.training.by/HotSnacks"/>
+	<import schemaLocation="BreakfastScheme.xsd" namespace="http://www.training.by/breakfast"/>
 	<element name="restaurant">
 		<complexType>
 			<sequence>
@@ -15,7 +19,9 @@
 	
 	<complexType name="Menu">
 	<sequence>
-	<element name="ColdSnacks" type="cd:ColdSnacks"/>
+	<element name="coldSnacks" type="cs:ColdSnacks"/>
+	<element name="hotSnacks" type="hs:HotSnacks"/>
+	<element name="breakfast" type="b:Breakfast"/>
 	</sequence>
 	
 	</complexType>

@@ -1,1 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<m:restaurant xmlns:m="http://www.example.org/MenuSchema"
+	xmlns:cs="http://www.training.by/ColdSnacks" xmlns:hs="http://www.training.by/HotSnacks"
+	xmlns:b="http://www.training.by/breakfast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/MenuSchema MenuScheme.xsd">
+	<m:menu>
+		<m:coldSnacks>
+			<cs:photo></cs:photo>
+			<cs:name></cs:name>
+			<cs:description></cs:description>
+			<cs:portion></cs:portion>
+			<cs:price></cs:price>
+		</m:coldSnacks>
+		<m:hotSnacks>
+			<hs:description>
+		</hs:description>
+		</m:hotSnacks>
+		<m:breakfast>
+			<b:description>
+	</b:description>
+			<b:name></b:name>
+		</m:breakfast>
+
+	</m:menu>
+</m:restaurant>
