@@ -18,11 +18,11 @@
 	</element>
 	
 	<complexType name="Menu">
-	<sequence>
+	<choice minOccurs="0" maxOccurs="unbounded">
 	<element name="coldSnacks" type="cs:ColdSnacks"/>
 	<element name="hotSnacks" type="hs:HotSnacks"/>
 	<element name="breakfast" type="b:Breakfast"/>
-	</sequence>
+	</choice >
 	
 	</complexType>
 

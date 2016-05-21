@@ -4,22 +4,23 @@
 	xmlns:b="http://www.training.by/breakfast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.example.org/MenuSchema MenuScheme.xsd">
 	<m:menu>
-		<m:coldSnacks>
+		<m:coldSnacks cs:ID="1">
 			<cs:photo></cs:photo>
 			<cs:name></cs:name>
 			<cs:description></cs:description>
 			<cs:portion></cs:portion>
 			<cs:price></cs:price>
 		</m:coldSnacks>
-		<m:hotSnacks>
+		<m:hotSnacks hs:ID="1">
 			<hs:description>
 		</hs:description>
 		</m:hotSnacks>
-		<m:breakfast>
+		<m:breakfast b:ID="ads1">
 			<b:description>
 	</b:description>
-			<b:name></b:name>
+			<b:name>Куриный рулет</b:name>
+			<b:portion>150</b:portion>
+		<b:price>2</b:price>
 		</m:breakfast>
-
 	</m:menu>
 </m:restaurant>

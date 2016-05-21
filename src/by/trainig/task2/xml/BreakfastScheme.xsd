@@ -5,11 +5,38 @@
 	<complexType name="Breakfast">
 		<choice minOccurs="1" maxOccurs="unbounded">
 			<element name="photo" type="string" />
-			<element name="name" type="string" />
-			<element name="description" type="string" />
-			<element name="portion" type="string" />
-			<element name="price" type="string" />
+			<element name="name" type="tns:Name" />
+			<element name="description" type="tns:Description" />
+			<element name="portion" type="tns:Portion" />
+			<element name="price" type="tns:Price" />
 		</choice>
-		<attribute name="ID" type="integer" />
+		<attribute name="ID" type="ID" use="required" />
 	</complexType>
+	<simpleType name="Name">
+		<restriction base="string">
+			<enumeration value="Асорти рыбное" />
+			<enumeration value="Закуска по русски" />
+			<enumeration value="Куриный рулет" />
+			<enumeration value="Баструма" />
+			<enumeration value="Ассорти баклажаны" />
+		</restriction>
+	</simpleType>
+	<simpleType name="Description">
+		<restriction base="string">
+			<minLength value="1"></minLength>
+			<maxLength value="60"></maxLength>
+		</restriction>
+	</simpleType>
+	<simpleType name="Portion">
+	<restriction base="integer">
+	<pattern value="50|100|150"/>
+	</restriction>
+	</simpleType>
+	<simpleType name="Price">
+		<restriction base="integer">
+			<minExclusive value="0"></minExclusive>
+			<maxExclusive value="300000"></maxExclusive>
+		</restriction>
+	</simpleType>
+
 </schema>

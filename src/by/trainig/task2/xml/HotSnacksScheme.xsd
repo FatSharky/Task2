@@ -9,6 +9,6 @@
 			<element name="portion" type="string" />
 			<element name="price" type="string" />
 		</choice>
-		<attribute name="ID" type="integer" />
+		<attribute name="ID" type="integer" use="required"/>
 	</complexType>
 </schema>
