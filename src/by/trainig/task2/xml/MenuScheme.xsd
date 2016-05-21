@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MenuSchema"
-	xmlns:tns="http://www.example.org/MenuSchema" elementFormDefault="qualified">
+	xmlns:tns="http://www.example.org/MenuSchema" 
+	xmlns:cd="http://www.training.by/ColdSnacks"
+	elementFormDefault="qualified">
+	<import schemaLocation="ColdSnacksScheme.xsd" namespace="http://www.training.by/ColdSnacks"/>
 	<element name="restaurant">
 		<complexType>
 			<sequence>
@@ -11,6 +14,9 @@
 	</element>
 	
 	<complexType name="Menu">
+	<sequence>
+	<element name="ColdSnacks" type="cd:ColdSnacks"/>
+	</sequence>
 	
 	</complexType>
 

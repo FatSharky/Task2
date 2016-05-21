@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.training.by/ColdSnacks"
 	xmlns:tns="http://www.training.by/ColdSnacks" elementFormDefault="qualified">
-	<complexType name="coldSnacks">
+	<complexType name="ColdSnacks">
 		<choice minOccurs="1" maxOccurs="unbounded">
 			<element name="photo" type="string" />
 			<element name="name" type="string" />
