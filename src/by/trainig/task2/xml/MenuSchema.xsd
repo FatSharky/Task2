@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MenuSchema" xmlns:tns="http://www.example.org/MenuSchema" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MenuSchema"
+	xmlns:tns="http://www.example.org/MenuSchema" elementFormDefault="qualified">
+	<element name="restaurant">
+		<complexType>
+			<sequence>
+				<element name="menu" type="tns:Menu" minOccurs="1"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<complexType name="Menu">
+	
+	</complexType>
+
 </schema>
