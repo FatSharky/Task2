@@ -4,23 +4,75 @@
 	xmlns:b="http://www.training.by/breakfast" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.example.org/MenuSchema MenuScheme.xsd">
 	<m:menu>
-		<m:coldSnacks cs:ID="1">
-			<cs:photo></cs:photo>
-			<cs:name></cs:name>
-			<cs:description></cs:description>
-			<cs:portion></cs:portion>
-			<cs:price></cs:price>
+		<m:coldSnacks cs:ID="ID_1">
+			<cs:photo>photo</cs:photo>
+			<cs:name>Асорти рыбное</cs:name>
+			<cs:description>Слабосоленая форель,семга</cs:description>
+			<cs:portion>50</cs:portion>
+			<cs:price>100000</cs:price>
 		</m:coldSnacks>
-		<m:hotSnacks hs:ID="1">
-			<hs:description>
-		</hs:description>
+		<m:coldSnacks cs:ID="ID_2">
+			<cs:photo>photo</cs:photo>
+			<cs:name>Асорти рыбное</cs:name>
+			<cs:description>Слабосоленая форель,семга</cs:description>
+			<cs:portion>100</cs:portion>
+			<cs:price>200000</cs:price>
+		</m:coldSnacks>
+		<m:coldSnacks cs:ID="ID_3">
+			<cs:photo>photo</cs:photo>
+			<cs:name>Баструма</cs:name>
+			<cs:description>Вяленая вырезка из говяжьего мяса</cs:description>
+			<cs:portion>50</cs:portion>
+			<cs:price>250000</cs:price>
+		</m:coldSnacks>
+		<m:coldSnacks cs:ID="ID_4">
+			<cs:photo>photo</cs:photo>
+			<cs:name>Ассорти баклажаны</cs:name>
+			<cs:description>Жареные баклажаны с помидорами</cs:description>
+			<cs:portion>150</cs:portion>
+			<cs:price>290000</cs:price>
+		</m:coldSnacks>
+		<m:hotSnacks hs:ID="ID_11">
+			<hs:photo>photo</hs:photo>
+			<hs:name>Лобио с шампиньонами</hs:name>
+			<hs:description>Фасоль с шампиньонами и грецким орехом</hs:description>
+			<hs:portion>2шт.</hs:portion>
+			<hs:price>900000</hs:price>
 		</m:hotSnacks>
-		<m:breakfast b:ID="ads1">
-			<b:description>
-	</b:description>
-			<b:name>Куриный рулет</b:name>
-			<b:portion>150</b:portion>
-		<b:price>2</b:price>
+		<m:hotSnacks hs:ID="ID_12">
+			<hs:photo>photo</hs:photo>
+			<hs:name>Жульен</hs:name>
+			<hs:description>Курица и грибы</hs:description>
+			<hs:portion>3шт.</hs:portion>
+			<hs:price>800000</hs:price>
+		</m:hotSnacks>
+		<m:hotSnacks hs:ID="ID_13">
+			<hs:photo>photo</hs:photo>
+			<hs:name>Эскарго</hs:name>
+			<hs:description>Виноградные улитки</hs:description>
+			<hs:portion>1шт.</hs:portion>
+			<hs:price>750000</hs:price>
+		</m:hotSnacks>
+		<m:breakfast b:ID="ID_21">
+			<b:photo></b:photo>
+			<b:name>Глазунья</b:name>
+			<b:description>2 яйца</b:description>
+			<b:portion>50</b:portion>
+			<b:price>350000</b:price>
+		</m:breakfast>
+		<m:breakfast b:ID="ID_22">
+			<b:photo></b:photo>
+			<b:name>Омлет</b:name>
+			<b:description>мого яиц</b:description>
+			<b:portion>100</b:portion>
+			<b:price>300000</b:price>
+		</m:breakfast>
+		<m:breakfast b:ID="ID_23">
+			<b:photo></b:photo>
+			<b:name>Блинчики с мясом</b:name>
+			<b:description>Жареные блинчики с мясом</b:description>
+			<b:portion>50</b:portion>
+			<b:price>250000</b:price>
 		</m:breakfast>
 	</m:menu>
 </m:restaurant>

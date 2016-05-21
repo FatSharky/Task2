@@ -3,13 +3,13 @@
 	xmlns:tns="http://www.training.by/ColdSnacks" elementFormDefault="qualified"
 	attributeFormDefault="qualified">
 	<complexType name="ColdSnacks">
-		<choice minOccurs="1" maxOccurs="unbounded">
+		<sequence minOccurs="1" maxOccurs="1">
 			<element name="photo" type="string" />
 			<element name="name" type="tns:Name" />
 			<element name="description" type="tns:Description" />
 			<element name="portion" type="tns:Portion" />
 			<element name="price" type="tns:Price" />
-		</choice>
+		</sequence>
 		<attribute name="ID" type="ID" use="required" />
 	</complexType>
 	<simpleType name="Name">

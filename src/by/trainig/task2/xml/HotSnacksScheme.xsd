@@ -2,13 +2,41 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.training.by/HotSnacks"
 	xmlns:tns="http://www.training.by/HotSnacks" elementFormDefault="qualified" attributeFormDefault="qualified">
 	<complexType name="HotSnacks">
-		<choice minOccurs="1" maxOccurs="unbounded">
+			<sequence minOccurs="1" maxOccurs="1">
 			<element name="photo" type="string" />
-			<element name="name" type="string" />
-			<element name="description" type="string" />
-			<element name="portion" type="string" />
-			<element name="price" type="string" />
-		</choice>
-		<attribute name="ID" type="integer" use="required"/>
+			<element name="name" type="tns:Name" />
+			<element name="description" type="tns:Description" />
+			<element name="portion" type="tns:Portion" />
+			<element name="price" type="tns:Price" />
+		</sequence>
+		<attribute name="ID" type="ID" use="required" />
 	</complexType>
+	<simpleType name="Name">
+		<restriction base="string">
+			<enumeration value="Лобио с шампиньонами" />
+			<enumeration value="Жульен" />
+			<enumeration value="Ахмат с овощами" />
+			<enumeration value="Креветки в банке" />
+			<enumeration value="Эскарго" />
+		</restriction>
+	</simpleType>
+	<simpleType name="Description">
+		<restriction base="string">
+			<minLength value="1"></minLength>
+			<maxLength value="60"></maxLength>
+		</restriction>
+	</simpleType>
+	<simpleType name="Portion">
+		<restriction base="string">
+			<pattern value="1шт.|2шт.|3шт." />
+		</restriction>
+	</simpleType>
+	<simpleType name="Price">
+		<restriction base="integer">
+			<minExclusive value="700000"></minExclusive>
+			<maxExclusive value="10000000"></maxExclusive>
+		</restriction>
+	</simpleType>
+
+
 </schema>
